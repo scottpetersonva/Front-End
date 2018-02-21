@@ -23,10 +23,12 @@
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 // Creating variables to hold the number of wins, losses, guesses left, letters guessed.
+
 var wins = 0;
 var losses = 0;
-var guessesLeft = 8;
+var guessesLeft = 9;
 var lettersGuessed = [];
+
 
 // Randomly chooses a choice from the options array. This is the Computer's guess.
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
@@ -46,28 +48,31 @@ document.onkeyup = function(event) {
     //   lettersGuessed.push;
     // }
   
-    if (userGuess) {
-      reWriteStats();
-    }
+    
 
 
     // if (lettersGuessed.length < 8) {
     //   guessesLeft === 9;
     // }
 
-    if (computerGuess === userGuess) {
-        wins++;
-        guessesLeft=9;
-    }
+
     
-    if (computerGuess != userGuess) {
+
+    if (computerGuess != userGuess) 
         guessesLeft--;
         lettersGuessed.push(userGuess);
-        {if (guessesLeft === 0){
-          losses++;
-          lettersGuessed.length === 0;  
+        if (guessesLeft === 0){
+          losses++; 
         }
-      }
+      
+
+    if (userGuess === computerGuess) {
+        object.wins++;
+        }
+        
+      
+      if (userGuess) {
+        reWriteStats();
       }
     }
         // how would i push letters guessed to letterGuessed array?
@@ -78,7 +83,6 @@ document.onkeyup = function(event) {
 
     
 
-  }
 
 
 function reWriteStats() {
