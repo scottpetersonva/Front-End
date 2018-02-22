@@ -8,12 +8,12 @@ Scott Peterson's basic portfolio
 
 ## Bootstrap Portfolio
 Portfolio - Bootstrap
-[View Project](https://scottpetersonva.github.io/Homework/Bootstrap-Portfolio)
+[View Project](https://scottpetersonva.github.io/CODE/Bootstrap-Portfolio)
 
 ## Responsive Portfolio
 Portfolio - Responsive
-[View Project](https://scottpetersonva.github.io/Homework-2/Responsive-Portfolio)
+[View Project](https://scottpetersonva.github.io/CODE/Responsive-Portfolio)
 
 ## Crystal Game
 Crystal Game
-[View Project](https://scottpetersonva.github.io/Homework-2/Crystal-Game)
+[View Project](https://scottpetersonva.github.io/Homework/Crystal-Game)
