@@ -8,11 +8,11 @@ Scott Peterson's basic portfolio
 
 ## Bootstrap Portfolio
 Portfolio - Bootstrap
-[View Project](https://scottpetersonva.github.io/CODE/Bootstrap-Portfolio)
+[View Project](https://scottpetersonva.github.io/Bootstrap-Portfolio)
 
 ## Responsive Portfolio
 Portfolio - Responsive
-[View Project](https://scottpetersonva.github.io/CODE/Responsive-Portfolio)
+[View Project](https://scottpetersonva.github.io/Responsive-Portfolio)
 
 ## Crystal Game
 Crystal Game
