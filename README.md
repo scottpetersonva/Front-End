@@ -3,9 +3,17 @@ Scott Peterson's basic portfolio
 [View Project](https://scottpetersonva.github.io/Homework/Basic-Portfolio)
 
 ## Psychic Game
-Scott Peterson's basic portfolio
+(Psychic game description)
 [View Project](https://scottpetersonva.github.io/Homework/Psychic-Game)
 
-## Psychic Game
-Scott Peterson's basic portfolio
+## Bootstrap Portfolio
+Portfolio - Bootstrap
+[View Project](https://scottpetersonva.github.io/Homework/Bootstrap-Portfolio)
+
+## Responsive Portfolio
+Portfolio - Responsive
+[View Project](https://scottpetersonva.github.io/Homework/Responsive-Portfolio)
+
+## Crystal Game
+Crystal Game
 [View Project](https://scottpetersonva.github.io/Homework/Crystal-Game)
