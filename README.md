@@ -12,8 +12,8 @@ Portfolio - Bootstrap
 
 ## Responsive Portfolio
 Portfolio - Responsive
-[View Project](https://scottpetersonva.github.io/Homework/Responsive-Portfolio)
+[View Project](https://scottpetersonva.github.io/Homework-2/Responsive-Portfolio)
 
 ## Crystal Game
 Crystal Game
-[View Project](https://scottpetersonva.github.io/Homework/Crystal-Game)
+[View Project](https://scottpetersonva.github.io/Homework-2/Crystal-Game)
