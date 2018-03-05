@@ -7,7 +7,7 @@ function startGame() {
 $("#game-over").toggleClass("hidden")
 
 var timeleft = 121;
-var triviaTimer = setInterval(function() {console.log("it works");
+var triviaTimer = setInterval(function() {
   timeleft--;
   document.getElementById("timer").innerHTML = timeleft;
     if(timeleft <= 0)
@@ -80,8 +80,6 @@ var q8 = document.getElementById("q8a3").checked;
 
 document.getElementById("answers").innerHTML = "<h1>RESULTS<h1><p>Correct Answers: " + correctAnswers + "</p>" + "<p>Incorrect Answers: " + incorrectAnswers + "</p>";
 document.getElementById("game-over").innerHTML = "<div></div>";
-console.log("Correct Answers: " + correctAnswers);
-console.log("Incorrect Answers: " + incorrectAnswers);
 $("#timer").toggleClass("hidden");
 $("#hide").toggleClass("hidden");
 
