@@ -1,6 +1,6 @@
 var questions = ["What is the deepest lake in the world?", "What is America's oldest national park?", "Which US state has a unicameral legislature?", "This US president signed into law the Antiquities Act allowing the president to designate landmarks, structures, and objects of historic or scientific interest as National Monuments", "What is the longest river in the United States?", "What is the most populated state capital in the US?", "Texas was an Independent Republic for how many years?", "Pluto was discovered at an observatory in which US State?"]
 
-var aAnswers = ["Lake Baikal", "Yosimite", "Maine", "Woodrow Wilson", "Colorado", "Denver", "5 years", "Washington"];
+var aAnwsers = ["Lake Baikal", "Yosimite", "Maine", "Woodrow Wilson", "Colorado", "Denver", "5 years", "Washington"];
 
 var bAnswers = ["Lake Michigan", "Glacier", "Nebraska", "William McKinley", "Missouri", "Indianapolis", "10 years", "Maine"];
 
@@ -24,6 +24,11 @@ aAnswersDiv.innerHTML = aAnswers[0];
 bAnswersDiv.innerHTML = bAnswers[0];
 cAnswersDiv.innerHTML = cAnswers[0];
 dAnswersDiv.innerHTML = dAnswers[0];
+
+questions + 1;
+aAnswers + 1;
+bAnswers + 1;
+cAnswers + 1;
 };
 
 

@@ -1,0 +1,1 @@
+var topics = ["curling", "bobsled", "hockey", "biathalon"]
