@@ -26,12 +26,5 @@ cAnswersDiv.innerHTML = cAnswers[0];
 dAnswersDiv.innerHTML = dAnswers[0];
 };
 
-function begin(){
-    targetDiv.innerHTML = questions[1];
-    aAnswersDiv.innerHTML = aAnswers[1];
-    bAnswersDiv.innerHTML = bAnswers[1];
-    cAnswersDiv.innerHTML = cAnswers[1];
-    dAnswersDiv.innerHTML = dAnswers[1];   
-}
 
 
