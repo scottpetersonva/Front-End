@@ -17,3 +17,7 @@ Portfolio - Responsive
 ## Crystal Game
 Crystal Game
 [View Project](https://scottpetersonva.github.io/Homework/Crystal-Game)
+
+## Trivia Game
+10 Questions Trivia
+[View Project](https://scottpetersonva.github.io/Homework/Trivia-Game) 
