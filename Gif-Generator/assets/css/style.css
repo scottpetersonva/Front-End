@@ -1,4 +1,4 @@
-/* body {
+body {
     font-family: 'Roboto Mono', monospace;
     background-color: rgb(217, 219, 219);
 }
@@ -20,7 +20,6 @@
 
 p {
     padding-top: 15px;
-    font-size: 18px;
 }
 
 #crystals {
@@ -32,14 +31,17 @@ p {
     height: 75px;
 }
 
-section { 
+section {
+    background-color: rgb(138, 199, 199); 
     color: black;
+    font-size: 14px;
     font-style: normal;
     padding: 10px;
     margin-top: 10px; 
 }
 
 .instructions-header {
+    /* background-color: rgb(217, 219, 219); */
     background-color: rgb(138, 199, 199); 
     border-bottom: 6px solid rgb(194, 175, 175);
     border-right: 6px solid rgb(194, 175, 175);
@@ -52,7 +54,7 @@ section {
 }
 
 .list {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .number-to-guess {
@@ -66,11 +68,16 @@ h3 {
 
 img:hover {
     opacity: 0.5;
-    filter: alpha(opacity=50);
+    filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 .wl-alert {
     text-align: center;
+}
+
+.container-body {
+    border-bottom: 6px solid rgb(194, 175, 175);
+    border-right: 6px solid rgb(194, 175, 175);
 }
 
 .social-image {
@@ -86,6 +93,7 @@ img:hover {
 footer {
     width: 100%;
     bottom: 0;
+    /* background-color: rgb(217, 219, 219); */
     background-color: rgb(138, 199, 199); 
     color: black;
     text-align: center;
@@ -95,69 +103,3 @@ footer {
     padding: 15px;
     margin-top: 10px;
 }
-
-.question {
-    border-bottom: 10px;
-    background-color: rgb(138, 199, 199); 
-    border-bottom: 6px solid rgb(194, 175, 175);
-    border-right: 6px solid rgb(194, 175, 175);
-    margin-bottom: 15px;
-}
-
-
-
-.radio-button {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 14px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.radio-button input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
-}
-
-.radio-button:hover input ~ .checkmark {
-    background-color: #ccc;
-}
-
-.radio-button input:checked ~ .checkmark {
-    background-color: #2196F3;
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.radio-button input:checked ~ .checkmark:after {
-    display: block;
-}
-
-.radio-button .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
-} */
