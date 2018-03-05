@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>crystal game</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="header-title">THE CRYSTAL GAME</h1>
+            <p>Follow the instructions below</p>
+    </div>
+
+    
+    <section class="container  instructions-header">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="instructions">Instructions</h2>
+                <br>
+            </div>
+        </div>
+    </section>
+    <section class="container container-body">
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li class="list">You will be given a random number at the start of the game.</li>
+                    <br>
+                    <li class="list">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+                    <br>
+                    <li class="list">You win the game by matching your total score to the randomly generated number. You lose the game if your total score goes above the random number.</li>
+                </ul>   
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li class="list">The value of each crysyal is hidden from you until you click on it.</li>
+                    <br>
+                    <li class="list">Each time the game starts, the game will change the values of each crystal</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+      
+    <section class="container container-body">
+   
+
+        <div class="row">
+            <div class="col-sm-4">
+                <h2 class="number-to-guess">Number to Guess: <span id="number-to-guess"></span></h2>
+            </div>
+            
+        
+
+  <!-- Note that this div is now empty. We will fill it dynamically -->
+            <div class="col-sm-4">
+                <h3><span id="wlText"></span></h3>
+                <div id="crystals" class="text-center"></div>
+            </div>
+    
+
+            <div class="col-sm-4">
+                
+                <h3>Wins: <span id="wins"></span></h3>
+                <h3>Losses: <span id="losses"></span></h3>
+                <h3>Your total score: <span id="counter"></span></h3>
+            </div>
+
+    <!-- </div id="crystals"><div> -->
+        </div>
+</section>
+<footer class="container">
+    <div class="row">
+        <div class="col-md-4">
+                <div class="rows">
+                    <div class="col-xs-4">
+                        <a href="https://github.com/scottpetersonva">
+                            <img class="social-image" src="assets/images/social-1_logo-github.svg" alt="github">
+                        </a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://www.linkedin.com/in/scott-peterson-3b58666b/">
+                            <img class="social-image" src="assets/images/social-1_logo-linkedin.svg" alt="LinkedIn">
+                        </a>    
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://www.twitter.com">
+                            <img class="social-image" src="assets/images/social-1_logo-twitter.svg" alt="twitter">
+                        </a>
+                    </div>
+                </div>
+
+        </div>
+        <div class="col-md-4">    
+            <p>&copy; Copyright 2018 Scott Peterson</p>
+        </div>
+        <div class="col-md-4">
+            <p><a class="email" href="mailto:scott.peterson.va@gmail.com" target="_top">scott.peterson.va@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+
+    
+
+  <!-- JAVASCRIPT  -->
+  <!-- ========================================= -->
+  
+
+  
+
+</body>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</html>
