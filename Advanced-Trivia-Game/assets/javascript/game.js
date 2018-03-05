@@ -1,0 +1,2 @@
+var questions = ["What is the deepest lake in the world?", "What is America's oldest national park?", "Which US state has a unicameral legislature?", "This US president signed into law the Antiquities Act allowing the president to designate landmarks, structures, and objects of historic or scientific interest as National Monuments", "What is the longest river in the United States?", "What is the most populated state capital in the US?", "Texas was an Independent Republic for how many years?", "Pluto was discovered at an observatory in which US State?"]
+var score = 0;
