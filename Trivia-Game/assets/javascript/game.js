@@ -83,4 +83,5 @@ document.getElementById("game-over").innerHTML = "<div></div>";
 $("#timer").toggleClass("hidden");
 $("#hide").toggleClass("hidden");
 
+
 }
