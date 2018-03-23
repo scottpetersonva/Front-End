@@ -29,3 +29,7 @@ Sports GIF Generator
 ## Train Schedule
 Live scheduling application using Firebase to make on-page data persist
 [View Project](https://scottpetersonva.github.io/Homework/Train-Schedule) 
+
+##Brew Hopper Project
+Brewey Locator
+[View Project](https://scottpetersonva.github.io/Homework/Project-Development) 
