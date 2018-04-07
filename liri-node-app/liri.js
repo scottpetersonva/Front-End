@@ -3,11 +3,14 @@
 require("dotenv").config();
 var keys = require("./keys.js");
 
+// console.log(keys)
+
 // Require code to call APIs
 
-var Twitter = require("twitter")
+var Twitter = require("twitter");
 var Spotify = require('node-spotify-api');
 var request = require("request");
+var fs = require("fs");
 
 var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
@@ -34,7 +37,7 @@ if (terminalEntry === "my-tweets") {
 
 // SPOTIFY SETTING TERMINAL ENTRY KEY PHRASE
 
-if (terminalEntry === "spotify") {
+if (terminalEntry === "spotify") {   
     
     var songEntry = process.argv;
     var songName = "";
@@ -51,7 +54,11 @@ if (terminalEntry === "spotify") {
 
 // SPOTIFY API CALL
 
-  spotify.search({ type: 'track', query: songName, limit: 3 }, function(err, data) {
+if (songEntry.length > 3) {
+
+  spotify.search({ type: 'track', query: songName, limit: 3 }, function(err, data)
+  
+  {
     if (err) {
       return console.log('Error occurred: ' + err);
     }
@@ -60,8 +67,28 @@ if (terminalEntry === "spotify") {
     console.log(JSON.stringify("Track Name: " + data.tracks.items[0].name, null, 2));
     console.log(JSON.stringify("Artist: " + data.tracks.items[0].album.artists[0].name, null, 2)); 
     console.log(JSON.stringify("Album Name: " + data.tracks.items[0].album.name, null, 2));
-    console.log(JSON.stringify("Preview URL: " + data.tracks.items[0].album.artists[0].preview_url, null, 2));
+    console.log(JSON.stringify("Preview URL: " + data.tracks.items[0].preview_url, null, 2));
   });
+}
+
+//  RETURNS "THE SIGN" IF USER MAKES NO ENTRY
+
+else {
+    spotify.search({ type: 'track', query: "The Sign Ace of Base", limit: 1 }, function(err, data)
+  
+    {
+      if (err) {
+        return console.log('Error occurred: ' + err);
+      }
+     
+    //   console.log(JSON.stringify(data, null, 2)); 
+      console.log(JSON.stringify("Track Name: " + data.tracks.items[0].name, null, 2));
+      console.log(JSON.stringify("Artist: " + data.tracks.items[0].album.artists[0].name, null, 2)); 
+      console.log(JSON.stringify("Album Name: " + data.tracks.items[0].album.name, null, 2));
+      console.log(JSON.stringify("Preview URL: " + data.tracks.items[0].preview_url, null, 2));
+    });
+}
+
 }
 
 // OMDB SETTING TERMINAL ENTRY KEY PHRASE
@@ -109,4 +136,44 @@ if (terminalEntry === "movie-this") {
     
         }
     });
+}
+
+var backstreet = []
+
+if (terminalEntry === "do-what-it-says") {
+
+    
+
+    fs.readFile("random.txt", "utf8", function(error, data) {
+
+        // If the code experiences any errors it will log the error to the console.
+        if (error) {
+          return console.log(error);
+        }
+
+
+        data = data.split(",")
+
+        backstreet.push(data)
+        
+        {
+            spotify.search({ type: 'track', query: backstreet[0][1], limit: 1 }, function(err, data)
+          
+            {
+              if (err) {
+                return console.log('Error occurred: ' + err);
+              }
+             
+            //   console.log(JSON.stringify(data, null, 2)); 
+              console.log(JSON.stringify("Track Name: " + data.tracks.items[0].name, null, 2));
+              console.log(JSON.stringify("Artist: " + data.tracks.items[0].album.artists[0].name, null, 2)); 
+              console.log(JSON.stringify("Album Name: " + data.tracks.items[0].album.name, null, 2));
+              console.log(JSON.stringify("Preview URL: " + data.tracks.items[0].album.artists[0].preview_url, null, 2));
+            });
+        }
+      
+      });
+
+
+
 }
