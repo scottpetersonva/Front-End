@@ -32,4 +32,4 @@ Live scheduling application using Firebase to make on-page data persist
 
 ## LIRI
 First Node.js project
-[View Project](https://scottpetersonva.github.io/Homework/liri-node-app) 
+[View Project](https://github.com/scottpetersonva/Homework/tree/master/liri-node-app) 
