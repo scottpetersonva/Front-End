@@ -1,96 +1,182 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Train Schedule</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Schedule</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.js"></script>
 
 </head>
-<body>
-    <div class="jumbotron">
-        <h1 class="header-title">Train Schedule</h1>
-    </div>
 
-    
+<body class="grey lighten-2">
+
+  <nav class="blue-grey lighten-3 hoverable">
     <div class="container">
-        
-        <div class="panel panel-default">
-            <!-- Default panel contents -->
-            <div class="panel-heading"><h1>Train Schedule</h1></div>
-          
-            <!-- Table -->
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>Train Name</th>
-                    <th>Destination</th> 
-                    <th>Frequency (min)</th>
-                    <th>Next Arrival</th>
-                    <th>Minutes Away</th> 
-                </tr>
-            </thead>
-                <tbody id="table-body">
-                </tbody>
-            </table>
-        </div>
-        
-        <div class="panel panel-default">
-            <div class="panel-heading"><h1>Add Train</h1></div>
-            <form class="form-group">
-                <p>Train Name</p>
-                <input type="text" id="train-name" class="form-control" placeholder="Train Name...">
-                <p>Destination</p>
-                <input type="text" id="destination" class="form-control" placeholder="Destination...">
-                <p>First Train Time (HH:MM) - Military Time</p>
-                <input id="first-train-time" class="form-control" placeholder="First Train Time (HH:MM)...">
-                <p>Frequency (min)</p>
-                <input type="number" name="quantity" id="frequency" class="form-control" placeholder="Frequency (min)...">
-            </form>
-            <button id="update-info" type="button" class="btn btn-primary btn-lg">SUBMIT</button>
-        </div>
+      <div class="nav-wrapper">
+        <a href="#" class="blue-grey-text text-darken-3 brand-logo center">Train Schedule</a>
+
+      </div>
     </div>
-        </body>
+  </nav>
 
 
+  <!-- <div class="parallax-container">
+                  <div class="parallax"><img src="assets/images/train-station.jpeg"></div> -->
 
-<footer class="container-fluid">
+  <div class="container">
+    <!-- <div class="row">
+            <div class="col-md-12"> -->
+
+
     <div class="row">
-        <div class="col-md-4">
-                <div class="rows">
-                    <div class="col-xs-4">
-                        <a href="https://github.com/scottpetersonva">
-                            <img class="social-image" src="assets/images/social-1_logo-github.svg" alt="github">
-                        </a>
-                    </div>
-                    <div class="col-xs-4">
-                        <a href="https://www.linkedin.com/in/scott-peterson-3b58666b/">
-                            <img class="social-image" src="assets/images/social-1_logo-linkedin.svg" alt="LinkedIn">
-                        </a>    
-                    </div>
-                    <div class="col-xs-4">
-                        <a href="https://www.twitter.com">
-                            <img class="social-image" src="assets/images/social-1_logo-twitter.svg" alt="twitter">
-                        </a>
-                    </div>
-                </div>
+      <div class="col s12">
+        <div class="card blue-grey lighten-2">
+          <div class="card-content white-text">
+            <!-- Default panel contents -->
 
+            <!-- Table -->
+            <table class="centered brown-text text-lighten-5">
+              <thead>
+                <tr>
+                  <th class="center-align">Train Name</th>
+                  <th class="center-align">Destination</th>
+                  <th class="center-align">Frequency (min)</th>
+                  <th class="center-align">Next Arrival</th>
+                  <th class="center-align">Minutes Away</th>
+                </tr>
+              </thead>
+              <tbody class="center-align white-text" id="table-body"></tbody>
+            </table>
+          </div>
         </div>
-        <div class="col-md-4">    
-            <p>&copy; Copyright 2018 Scott Peterson</p>
+
+
+
+
+        <form>
+          <div class="card blue-grey lighten-1">
+            <div class="card-content">
+              <div class="input-field">
+                <input id="train-name" type="text" class="validate brown-text text-lighten-5">
+                <label class="brown-text text-lighten-5" for="last_name">Train Name</label>
+              </div>
+              <div class="input-field">
+                <input id="destination" type="text" class="validate brown-text text-lighten-5">
+                <label class="brown-text text-lighten-5" for="last_name">Destination</label>
+              </div>
+              <div class="input-field">
+                <input id="first-train-time" type="text" class="validate brown-text text-lighten-5">
+                <label class="brown-text text-lighten-5" for="last_name">First Train Time (HH:MM) - Military Time</label>
+              </div>
+              <div class="input-field">
+                <input id="frequency" type="text" class="validate brown-text text-lighten-5">
+                <label class="brown-text text-lighten-5" for="last_name">Frequency (min)</label>
+              </div>
+              <button data-target="modal1" id="update-info" type="button" class="btn modal-trigger blue-grey lighten-3 blue-grey-text text-darken-3">SUBMIT
+                <i class="material-icons right">send</i>
+              </button>
+
+
+
+        </form>
         </div>
-        <div class="col-md-4">
-            <p><a class="email" href="mailto:scott.peterson.va@gmail.com" target="_top">scott.peterson.va@gmail.com</a></p>
         </div>
+      </div>
     </div>
-</footer>
+  </div>
 
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  <!-- MODAL STRUCTURE -->
+
+  <div id="modal1" class="modal">
+    <div class="modal-content blue-grey lighten-3">
+      <h4>Train Schedule</h4>
+      <p>Success! Your train has been scheduled.</p>
+    </div>
+    <div class="modal-footer blue-grey lighten-1">
+      <a href="#!" class="modal-close waves-effect waves-blue-grey btn-flat white-text">Close</a>
+    </div>
+  </div>
+
+
+
+
+
+
+  </div>
+  </div>
+  <!-- </div> -->
+  <footer class="page-footer blue-grey lighten-3 hoverable">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="row valign-wrapper">
+            <div class="col s12 m4 left-align">
+
+
+
+              <div class="col m4">
+                <a href="https://www.linkedin.com/in/scott-peterson-3b58666b/">
+                  <img class="hover-change footer-social" id="linkedin-image" src="assets/images/social-1_logo-linkedin.svg" alt="LinkedIn">
+                </a>
+              </div>
+              <div class="col m4">
+                <a href="https://twitter.com/d3v_d3v_d3v">
+                  <img class="hover-change footer-social" id="twitter-image" src="assets/images/social-1_logo-twitter.svg" alt="twitter">
+                </a>
+              </div>
+              <div class="col m4>">
+                <a href="https://github.com/scottpetersonva">
+                  <img class="hover-change footer-social" id="github-image" src="assets/images/social-1_logo-github.svg" alt="github">
+                </a>
+              </div>
+            </div>
+
+
+            <div class="col s12 m4 center-align">
+
+              <p class="blue-grey-text text-darken-3 copywrite">&copy; Copyright 2018 Scott Peterson</p>
+
+            </div>
+
+
+            <div class="col s12 m4 right-align">
+              <h5 class="blue-grey-text text-darken-3 bottom-links-header">LINKS</h5>
+              <ul>
+                <li>
+                  <a class="blue-grey-text text-darken-3 bottom-links" href="index.html">About Me</a>
+                </li>
+                <li>
+                  <a class="blue-grey-text text-darken-3 bottom-links" href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                  <a class="blue-grey-text text-darken-3 bottom-links" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<!-- Minified jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </html>

@@ -1,4 +1,6 @@
-// moment js for time and dates
+$( document ).ready(function(){
+  $('.parallax').parallax();
+  });
 
 // Initialize Firebase
 var config = {
@@ -42,7 +44,7 @@ $("#update-info").on("click", function(){
   console.log("------------------------")
 
 	// notification of new train
-	alert("Train successfully added");
+	$('.modal').modal();
 
 	// Clear fields
 	$("#train-name").val("");
