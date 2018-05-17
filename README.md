@@ -3,7 +3,7 @@ Scott Peterson's basic portfolio
 [View Project](https://scottpetersonva.github.com/Homework/Basic-Portfolio) -->
 
 ## Psychic Game
-(Psychic game description)
+Game that allows user to guess a letter picked at random
 [View Project](https://github.com/scottpetersonva/Homework/tree/master/Psychic-Game)
 
 <!-- ## Bootstrap Portfolio
@@ -15,11 +15,11 @@ Portfolio - Responsive
 [View Project](https://github.com/scottpetersonva/Homework/Responsive-Portfolio) -->
 
 ## Crystal Game
-Crystal Game
+Guess the randomly generated number by clicking shapes with hidden, randomly assigned numbers
 [View Project](https://github.com/scottpetersonva/Homework/tree/master/Crystal-Game)
 
 ## Trivia Game
-10 Questions Trivia
+10 Question History/Geography Trivia
 [View Project](https://github.com/scottpetersonva/Homework/tree/master/Trivia-Game) 
 
 ## GIF Generator
