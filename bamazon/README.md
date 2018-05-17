@@ -29,4 +29,4 @@ JavaScript | Node.js | MySQL
 
 ### Screenshots
 
-![alt text](screenshots/1-run-start.JPG)
+![alt text](screen-shots/1-run-start.JPG)
