@@ -29,4 +29,24 @@ JavaScript | Node.js | MySQL
 
 ### Screenshots
 
+Starts program
+
 ![alt text](screen-shots/1-run-start.JPG)
+
+```
+
+Displays available products
+
+![alt text](screen-shots/2-calling-list-selecting-item-and-quantity.JPG)
+
+```
+
+Displays purchase total
+
+![alt text](screen-shots/3-give-user-price-of-purchase.JPG)
+
+```
+
+Updates inventory
+
+![alt text](screen-shots/4-inventory-updates-to-reflect-purchase.JPG)
