@@ -4,7 +4,7 @@ Scott Peterson's basic portfolio
 
 ## Psychic Game
 (Psychic game description)
-[View Project](https://scottpetersonva.github.com/Homework/Psychic-Game)
+[View Project](https://github.com/scottpetersonva/Homework/Psychic-Game)
 
 ## Bootstrap Portfolio
 Portfolio - Bootstrap
@@ -12,24 +12,24 @@ Portfolio - Bootstrap
 
 ## Responsive Portfolio
 Portfolio - Responsive
-[View Project](https://scottpetersonva.github.com/Responsive-Portfolio)
+[View Project](https://github.com/scottpetersonva/Homework/Responsive-Portfolio)
 
 ## Crystal Game
 Crystal Game
-[View Project](https://scottpetersonva.github.com/Homework/Crystal-Game)
+[View Project](https://github.com/scottpetersonva/Homework/Homework/Crystal-Game)
 
 ## Trivia Game
 10 Questions Trivia
-[View Project](https://scottpetersonva.github.com/Homework/Trivia-Game) 
+[View Project](https://github.com/scottpetersonva/Homework/Homework/Trivia-Game) 
 
 ## GIF Generator
 Sports GIF Generator
-[View Project](https://scottpetersonva.github.com/Homework/Gif-Generator) 
+[View Project](https://github.com/scottpetersonva/Homework/Homework/Gif-Generator) 
 
 ## Train Schedule
 Live scheduling application using Firebase to make on-page data persist
-[View Project](https://scottpetersonva.github.com/Homework/Train-Schedule) 
+[View Project](https://github.com/scottpetersonva/Homework/Homework/Train-Schedule) 
 
 ## LIRI
 First Node.js project
-[View Project](https://github.com/scottpetersonva/Homework/liri-node-app) 
+[View Project](https://github.com/scottpetersonva/Homework/tree/master/liri-node-app) 
