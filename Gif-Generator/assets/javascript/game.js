@@ -1,3 +1,14 @@
+// Materialize jQuery
+// $( document ).ready(function(){
+//   $('.collapsible').collapsible();
+//   $('.slider').slider();
+//   $('.modal').modal();
+//   $('.button-collapse').sideNav({
+//         closeOnClick: true
+//       }
+//     );
+//   });
+
 // var APIkey = "Q46CLvm1cKcXkLRLD5PdUPYeaSIIi3sW";
 
 var sports = ["soccer", "football", "hockey", "baseball", "tennis", "golf", "cycling"];
@@ -27,13 +38,13 @@ $.ajax({
       // Only taking action if the photo has an appropriate rating
 
         // Creating a div with the class "item"
-        var gifDiv = $("<div class='sports-view'>");
+        var gifDiv = $("<div class='sports-view col s4 center-align'>");
 
         // Storing the result item's rating
         var rating = results[i].rating;
 
         // Creating a paragraph tag with the result item's rating
-        var p = $("<p>").text("Rating: " + rating);
+        var p = $("<p class='blue-grey-text'>").text("Rating: " + rating);
 
         // setting animated variable
         var animated = response.data[i].images.fixed_height.url;
@@ -82,12 +93,12 @@ function renderButtons() {
     for (var i = 0; i < sports.length; i++) {
     // Then dynamicaly generating buttons for each movie in the array.
     // This code $("<button>") is all jQuery needs to create the start and end tag. (<button></button>)
-    var a = $("<button>");
+    var a = $("<button class='btn blue-grey'>");
     // Adding a class
     a.addClass("sport-btn")
-    // Adding a data-attribute with a value of teh sport at index i
+    // Adding a data-attribute with a value of the sport at index i
     a.attr("data-name", sports[i]);
-    // Providing the button's text with a value of teh sport at index i
+    // Providing the button's text with a value of the sport at index i
     a.text(sports[i]);
     // Adding the button to the HTML
     $("#button-view").append(a);

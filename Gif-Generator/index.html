@@ -1,83 +1,124 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>GIF Generator</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
-<body>
-    <div class="jumbotron">
-        <h1 class="header-title">Sports GIF Generator</h1>
-    </div>
 
-    
-    <div class="container">
-        <h1>Sports GIF Search</h1>
-        
-    
-        <!-- Sports will get dumped here -->
-        
-    
-        <form id="sport-form">
-          <label for="sport-input">Search for a sports GIF</label>
-          <input type="text" id="sport-input"><br>
-    
-          <!-- Button triggers new sport to be added -->
-          <input id="add-sport" type="submit" value="Add a Sport">
-        </form>
-        <div id="button-view"></div>
+<body class="amber lighten-4">
+    <nav class="blue-grey">
+        <div class="nav-wrapper">
+            <a class="brand-logo center amber-text text-lighten-4">Super-Fun-Sports-GIF-Finder-Machine
+            </a>
+        </div>
+    </nav>
+
+
+
+    <main class="container">
+        <div class="row">
+            <div class="col s12">
+                <h1 class="center-align blue-grey-text">Enter a sport and/or click a button</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+
+                    <div class="input-field col s12">
+                        <input id="sport-input" type="text" class="validate blue-grey-text">
+                        <label for="last_name" class="blue-grey-text">Sport Input</label>
+                    </div>
+                </div>
+                <!-- Button triggers new sport to be added -->
+                <input class="btn blue-grey" id="add-sport" type="submit" value="Add a Sport">
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col s12" id="button-view"></div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <div id="sports-view"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="page-footer blue-grey hoverable">
         <div class="container">
             <div class="row">
-                <div id="sports-view"></div>
+                <div class="col s12">
+                    <div class="row valign-wrapper">
+                        <div class="col s12 m4 left-align">
+
+
+
+                            <div class="col m4">
+                                <a href="https://www.linkedin.com/in/scott-peterson-3b58666b/">
+                                    <img class="hover-change footer-social" id="linkedin-image" src="assets/images/social-1_logo-linkedin.svg" alt="LinkedIn">
+                                </a>
+                            </div>
+                            <div class="col m4">
+                                <a href="https://twitter.com/d3v_d3v_d3v">
+                                    <img class="hover-change footer-social" id="twitter-image" src="assets/images/social-1_logo-twitter.svg" alt="twitter">
+                                </a>
+                            </div>
+                            <div class="col m4>">
+                                <a href="https://github.com/scottpetersonva">
+                                    <img class="hover-change footer-social" id="github-image" src="assets/images/social-1_logo-github.svg" alt="github">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="col s12 m4 center-align">
+
+                            <p class="copywrite amber-text text-lighten-4">&copy; Copyright 2018 Scott Peterson</p>
+
+                        </div>
+
+
+                        <div class="col s12 m4 right-align">
+                            <h5 class="amber-text text-lighten-4 bottom-links-header">LINKS</h5>
+                            <ul>
+                                <li>
+                                    <a class="amber-text text-lighten-4 bottom-links" href="https://scottpetersonva.github.io/index.html">About Me</a>
+                                </li>
+                                <li>
+                                    <a class="amber-text text-lighten-4 bottom-links" href="https://scottpetersonva.github.io/portfolio.html">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a class="amber-text text-lighten-4 bottom-links" href="https://scottpetersonva.github.io/contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
-
-        <div id="wrap">
-            <div id="main" class="container clear-top">
-              
-            </div>
-          </div>
-
-<footer>
-    <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-                <div class="rows">
-                    <div class="col-xs-4">
-                        <a href="https://github.com/scottpetersonva">
-                            <img class="social-image" src="assets/images/social-1_logo-github.svg" alt="github">
-                        </a>
-                    </div>
-                    <div class="col-xs-4">
-                        <a href="https://www.linkedin.com/in/scott-peterson-3b58666b/">
-                            <img class="social-image" src="assets/images/social-1_logo-linkedin.svg" alt="LinkedIn">
-                        </a>    
-                    </div>
-                    <div class="col-xs-4">
-                        <a href="https://www.twitter.com">
-                            <img class="social-image" src="assets/images/social-1_logo-twitter.svg" alt="twitter">
-                        </a>
-                    </div>
-                </div>
-
-        </div>
-        <div class="col-md-4">    
-            <p>&copy; Copyright 2018 Scott Peterson</p>
-        </div>
-        <div class="col-md-4">
-            <p><a class="email" href="mailto:scott.peterson.va@gmail.com" target="_top">scott.peterson.va@gmail.com</a></p>
-        </div>
-    </div>
-</div>
-</footer>
+    </footer>
 </body>
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+<!-- Minified jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<!-- Local JS file -->
+<script src="assets/javascript/game.js"></script>
+
 </html>
