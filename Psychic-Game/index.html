@@ -1,23 +1,121 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Psychic Game</title>
-  </head>
-  <body>
 
-      <h1>Psychic Game</h1>
-  <p>Guess what letter I'm thinking of:</p>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Psychic Game</title>
+</head>
 
-    <div id="game">
-      <p>wins: 0</p>
-      <p>losses: 0</p>
-      <p>guesses left: 9</p>
-      <p>letters guessed:</p>
+<body class="blue-grey darken-4">
+<div class="row center-align blue lighten-5 hoverable">
+  <div class="col s12">
+    <h1 class="blue-grey-text text-darken-3">Psychic Game</h1>
+  </div>
+</div>
+  <div class="container center-align">
+    
+
+
+    <div class="row center-align">
+      <div class="col s12 center-align">
+        <div class="card blue lighten-5 hoverable">
+
+          <div class="card-content white-text">
+            <span class="card-title blue-grey-text text-darken-3">Guess what letter I'm thinking of:</span>
+            <div class="row valign-wrapper">
+              <div class="col m4">
+            <p class="blue-grey-text text-darken-3 card-p">wins:
+              <span id="wins" class="card-span"></span>
+            </p>
+            <p class="blue-grey-text text-darken-3 card-p">losses:
+              <span id="losses" class="card-span"></span>
+            </p>
+          </div>
+        
+        
+          <div class="col m4">
+              <img src="assets/images/crystal-ball.gif" alt="Crystal Ball">
+          </div>
+       
+        
+          <div class="col m4">
+        
+            <p class="blue-grey-text text-darken-3 card-p">guesses left:
+              <span id="guesses-left" class="card-span"></span>
+            </p>
+            <p class="blue-grey-text text-darken-3 card-p">letters guessed:
+              <span id="letters-guessed" class="card-span"></span>
+            </p>
+          </div>
+        
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  </div>
 
+  <footer class="page-footer blue lighten-5 hoverable">
+    <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="row valign-wrapper">
+              <div class="col s12 m4 left-align">
+  
+  
+  
+                <div class="col m4">
+                  <a href="https://www.linkedin.com/in/scott-peterson-3b58666b/">
+                    <img class="hover-change footer-social" id="linkedin-image" src="assets/images/social-1_logo-linkedin.svg" alt="LinkedIn">
+                  </a>
+                </div>
+                <div class="col m4">
+                  <a href="https://twitter.com/d3v_d3v_d3v">
+                    <img class="hover-change footer-social" id="twitter-image" src="assets/images/social-1_logo-twitter.svg" alt="twitter">
+                  </a>
+                </div>
+                <div class="col m4>">
+                  <a href="https://github.com/scottpetersonva">
+                    <img class="hover-change footer-social" id="github-image" src="assets/images/social-1_logo-github.svg" alt="github">
+                  </a>
+                </div>
+              </div>
+  
+  
+              <div class="col s12 m4 center-align">
+  
+                <p class="blue-grey-text text-darken-3 copywrite">&copy; Copyright 2018 Scott Peterson</p>
+  
+              </div>
+  
+  
+              <div class="col s12 m4 right-align">
+                <h5 class="blue-grey-text text-darken-3 bottom-links-header">LINKS</h5>
+                <ul>
+                  <li>
+                    <a class="blue-grey-text text-darken-3 bottom-links" href="https://github.com/scottpetersonva/Front-End/tree/master/Psychic-Game">View Repo</a>
+                  </li>
+                  <li>
+                    <a class="blue-grey-text text-darken-3 bottom-links" href="https://scottpetersonva.github.io/index.html">About Me</a>
+                  </li>
+                  <li>
+                    <a class="blue-grey-text text-darken-3 bottom-links" href="https://scottpetersonva.github.io/portfolio.html">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="blue-grey-text text-darken-3 bottom-links" href="https://scottpetersonva.github.io/contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script src="assets/javascript/game.js"></script>
+
 </html>
