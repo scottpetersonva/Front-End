@@ -26,7 +26,7 @@ Guess the randomly generated number by clicking shapes with hidden, randomly ass
 Sports GIF Generator
 [View Project](https://github.com/scottpetersonva/Front-End/tree/master/Gif-Generator) 
 
-## Train Schedule
+## Train Scheduler
 Live scheduling application using Firebase to make on-page data persist
 [View Project](https://github.com/scottpetersonva/Front-End/tree/master/Train-Schedule) 
 
