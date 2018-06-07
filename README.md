@@ -4,7 +4,7 @@ Scott Peterson's basic portfolio
 
 ## Psychic Game
 Game that allows user to guess a letter picked at random
-[View Project](https://github.com/scottpetersonva/Homework/tree/master/Psychic-Game)
+[View Project](https://github.com/scottpetersonva/Front-End/tree/master/Psychic-Game)
 
 <!-- ## Bootstrap Portfolio
 Portfolio - Bootstrap
@@ -16,19 +16,19 @@ Portfolio - Responsive
 
 ## Crystal Game
 Guess the randomly generated number by clicking shapes with hidden, randomly assigned numbers
-[View Project](https://github.com/scottpetersonva/Homework/tree/master/Crystal-Game)
+[View Project](https://github.com/scottpetersonva/Front-End/tree/master/Crystal-Game)
 
 ## Trivia Game
 10 Question History/Geography Trivia
-[View Project](https://github.com/scottpetersonva/Homework/tree/master/Trivia-Game) 
+[View Project](https://github.com/scottpetersonva/Front-End/tree/master/Trivia-Game) 
 
 ## GIF Generator
 Sports GIF Generator
-[View Project](https://github.com/scottpetersonva/Homework/tree/master/Gif-Generator) 
+[View Project](https://github.com/scottpetersonva/Front-End/tree/master/Gif-Generator) 
 
 ## Train Schedule
 Live scheduling application using Firebase to make on-page data persist
-[View Project](https://github.com/scottpetersonva/Homework/tree/master/Train-Schedule) 
+[View Project](https://github.com/scottpetersonva/Front-End/tree/master/Train-Schedule) 
 
 ## LIRI
 First Node.js project
