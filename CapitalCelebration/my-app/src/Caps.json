@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "name": "Ovi",
+      "image": "http://www.hockeydb.com/ihdb/photos/alex-ovechkin-2018-49.jpg",
+      "position": "LW",
+      "country": "Russia"
+    },
+    {
+      "id": 2,
+      "name": "Oshie",
+      "image": "http://www.hockeydb.com/ihdb/photos/t.j.-oshie-2018-49.jpg",
+      "position": "RW",
+      "country": "USA"
+    },
+    {
+      "id": 3,
+      "name": "Vrana",
+      "image": "http://www.hockeydb.com/ihdb/photos/jakub-vrana-2018-49.jpg",
+      "position": "LW",
+      "country": "Czech Republic"
+    },
+    {
+      "id": 4,
+      "name": "Burky",
+      "image": "http://www.hockeydb.com/ihdb/photos/andre-burakovsky-2018-49.jpg",
+      "position": "LW",
+      "country": "Sweden"
+    },
+    {
+      "id": 5,
+      "name": "Kuzy",
+      "image": "http://www.hockeydb.com/ihdb/photos/evgeny-kuznetsov-2018-49.jpg",
+      "position": "C",
+      "country": "Russia"
+    },
+    {
+      "id": 6,
+      "name": "DSP",
+      "image": "http://www.hockeydb.com/ihdb/photos/devante-smith-pelly-2017-51.jpg",
+      "position": "RW",
+      "country": "Canada"
+    },
+    {
+      "id": 7,
+      "name": "Carly",
+      "image": "http://www.hockeydb.com/ihdb/photos/john-carlson-2018-49.jpg",
+      "position": "D",
+      "country": "USA"
+    },
+    {
+      "id": 8,
+      "name": "Willy",
+      "image": "http://www.hockeydb.com/ihdb/photos/tom-wilson-2018-49.jpg",
+      "position": "RW",
+      "country": "Canada"
+    },
+    {
+      "id": 9,
+      "name": "Holts",
+      "image": "http://www.hockeydb.com/ihdb/photos/braden-holtby-2018-49.jpg",
+      "position": "G",
+      "country": "Canada"
+    },
+    {
+      "id": 10,
+      "name": "Batya",
+      "image": "http://www.hockeydb.com/ihdb/photos/brooks-orpik-2018-49.jpg",
+      "position": "D",
+      "country": "USA"
+    },
+    {
+      "id": 11,
+      "name": "Beags",
+      "image": "http://www.hockeydb.com/ihdb/photos/jay-beagle-2018-49.jpg",
+      "position": "C",
+      "country": "Canada"
+    },
+    {
+      "id": 12,
+      "name": "Eller",
+      "image": "http://www.hockeydb.com/ihdb/photos/lars-eller-2018-49.jpg",
+      "position": "C",
+      "country": "Denmark"
+    }
+  ]
+  
