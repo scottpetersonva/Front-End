@@ -1,7 +1,7 @@
 # Super-Fun-Sports-GIF-Finder-Machine
 Uses the Giphy API to display your favorite sports GIFs
 
-[View the Project](https://scottpetersonva.github.io/Homework/Gif-Generator/)
+[View the Project](https://scottpetersonva.github.io/Front-End/Gif-Generator/)
 
 ### The Details
 
