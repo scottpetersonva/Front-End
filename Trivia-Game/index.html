@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Triva Game</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/litera/bootstrap.min.css" rel="stylesheet" integrity="sha384-+YpxMU1QQywaQtI3dMQAwIcu0vVDuOREjQPC59qblQHg9nTdcrUXMPnanUaldUnY" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -27,7 +27,10 @@
     <div id="hide" class="text-center"><button class="btn btn-primary btn-lg" onclick=startGame()>Start Game</button></div>
       <section id="game-over" class="container container-body hidden">
       <div class="row">
-            <form class="col-md-12 question">
+            <form class="col-md-12 question">\
+                <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
                     <p>1. What is the deepest lake in the world?</p>
                     <label class="radio-button">Lake Baikal
                       <input id="q1a1" type="radio" name="radio">
@@ -44,7 +47,10 @@
                     <label class="radio-button">Lake Victoria
                       <input id="q1a4" type="radio" name="radio">
                       <span class="checkmark"></span>
-                    </label>  
+                    </label>
+                    </div>
+                    </div>
+                    
             </form>
             <form class="col-md-12 question">
                     <p>2. What is America's oldest national park?</p>
