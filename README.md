@@ -33,3 +33,7 @@ Live scheduling application using Firebase to make on-page data persist
 ## LIRI
 First Node.js project
 [View Project](https://github.com/scottpetersonva/Homework/tree/master/liri-node-app) 
+
+## Bamazon
+A e-storefront using Node.js and MySQL. The app will take in orders from customers and adjust the stock of the store's inventory.
+[View Project](https://github.com/scottpetersonva/Homework/tree/master/bamazon) 
