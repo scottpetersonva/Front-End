@@ -86,6 +86,7 @@ else {
       console.log(JSON.stringify("Artist: " + data.tracks.items[0].album.artists[0].name, null, 2)); 
       console.log(JSON.stringify("Album Name: " + data.tracks.items[0].album.name, null, 2));
       console.log(JSON.stringify("Preview URL: " + data.tracks.items[0].preview_url, null, 2));
+      
     });
 }
 
@@ -168,7 +169,9 @@ if (terminalEntry === "do-what-it-says") {
               console.log(JSON.stringify("Track Name: " + data.tracks.items[0].name, null, 2));
               console.log(JSON.stringify("Artist: " + data.tracks.items[0].album.artists[0].name, null, 2)); 
               console.log(JSON.stringify("Album Name: " + data.tracks.items[0].album.name, null, 2));
-              console.log(JSON.stringify("Preview URL: " + data.tracks.items[0].album.artists[0].preview_url, null, 2));
+              console.log(JSON.stringify("Preview URL: " + data.tracks.items[0].preview_url, null, 2));
+
+              
             });
         }
       

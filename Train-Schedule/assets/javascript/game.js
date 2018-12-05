@@ -69,7 +69,7 @@ database.ref().on("child_added", function(snapshot){
 
 	// Calculate the minutes until arrival using hardcore math
 	// To calculate the minutes till arrival, take the current time in unix subtract the FirstTrain time and find the modulus between the difference and the frequency  
-	var differenceTimes = moment().diff(moment.unix(firstTrainTime), "minutes");
+	// var differenceTimes = moment().diff(moment.unix(firstTrainTime), "minutes");
 	var remainder = moment().diff(moment.unix(firstTrainTime), "minutes") % frequency;
 	var minutesAway = frequency - remainder;
 
